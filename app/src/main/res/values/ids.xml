@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="et_room_number" type="id" />
+    <item name="et_mobile_number" type="id" />
+    <item name="et_block" type="id" />
+    <item name="et_address" type="id" />
+    <item name="btn_save_address" type="id" />
+    <item name="address_dialog" type="id" />
+    <item name="et_mobile" type="id" />
+    <item name="saved_addresses_container" type="id" />
+    <item name="tv_total" type="id" />
+    <item name="tv_address_details" type="id" />
+    <item name="tv_key" type="id" />
+    <item name="constraintLayout" type="id" />
+    <item name="tv_order_id" type="id" />
+</resources>

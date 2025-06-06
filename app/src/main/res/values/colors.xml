@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="purple_500">#6200EE</color>
+    <color name="gray">#9E9E9E</color>
+
+    <!-- Secondary Colors -->
+    <color name="purple_700">#3700B3</color>
+    <color name="gray_light">#F5F5F5</color>
+
+    <color name="teal_200">#03DAC5</color>
+    <color name="teal_700">#018786</color>
+
+    <!-- Custom Colors -->
+    <color name="shop1_background">#12040404</color>
+    <color name="shop2_background">#12181717</color>
+
+    <!-- Light and Dark Theme Colors -->
+    <color name="my_light_primary">#6200EE</color>  <!-- Example light primary color -->
+    <color name="my_light_secondary">#03DAC5</color> <!-- Example light secondary color -->
+    <color name="my_dark_primary">#BB86FC</color>    <!-- Example dark primary color -->
+    <color name="my_dark_secondary">#03DAC6</color>  <!-- Example dark secondary color -->
+
+    <!-- Primary Colors -->
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryVariant">#3700B3</color> <!-- Ensure this is defined -->
+    <color name="colorOnPrimary">#FFFFFF</color>
+    <color name="colorSecondary">#03DAC5</color>
+    <color name="colorSecondaryVariant">#018786</color>
+    <color name="colorOnSecondary">#000000</color>
+
+    <!-- Background Colors -->
+    <color name="colorBackground">#FFFFFF</color>
+    <color name="colorOnBackground">#000000</color>
+    <color name="colorSurface">#FFFFFF</color>
+    <color name="colorOnSurface">#000000</color>
+
+    <!-- Dark Theme Colors -->
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorPrimaryVariantDark">#BB86FC</color>
+    <color name="colorOnPrimaryDark">#000000</color>
+    <color name="colorSecondaryDark">#03DAC5</color>
+    <color name="colorSecondaryVariantDark">#018786</color>
+    <color name="colorOnSecondaryDark">#000000</color>
+    <color name="colorBackgroundDark">#121212</color>
+    <color name="colorOnBackgroundDark">#FFFFFF</color>
+    <color name="colorSurfaceDark">#121212</color>
+    <color name="colorOnSurfaceDark">#FFFFFF</color>
+    <color name="soft_blue">#6FA8DC</color>         <!-- Light blue -->
+    <color name="soft_gray">#B0BEC5</color>         <!-- Soft gray -->
+    <color name="soft_navy">#3A506B</color>         <!-- Gentle navy for text -->
+          <!-- White background -->
+
+
+    <color name="purple_200">#FFC080</color>
+    <!-- Primary Colors -->
+    <color name="navy_blue">#1D3557</color>         <!-- Main branding, headers -->
+
+    <!-- Secondary Colors -->
+    <color name="sunset_orange">#FF6B35</color>     <!-- CTA buttons -->
+    <color name="lime_green">#4CAF50</color>        <!-- Success messages -->
+
+    <!-- Tertiary Colors -->
+    <color name="tomato_red">#E63946</color>        <!-- Error messages -->
+    <color name="light_gray">#F5F5F5</color>        <!-- Subtle background -->
+    <color name="charcoal_gray">#333333</color>     <!-- Inactive text, buttons -->
+    <color name="golden_yellow">#FFCA3A</color>
+    <color name="red">#FF3B30</color> <!-- Accent labels, badges -->
+</resources>

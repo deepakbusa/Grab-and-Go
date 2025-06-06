@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:padding="16dp">
+
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <!-- Back button -->
+        <ImageView
+            android:id="@+id/back_image"
+            android:layout_width="45dp"
+            android:layout_height="43dp"
+            android:contentDescription="Back arrow"
+            android:paddingEnd="5dp"
+            android:src="@drawable/baseline_arrow_back_24" />
+
+        <!-- Search input -->
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="2"
+            android:background="@drawable/search_input_background"
+            android:hint="Search"
+            android:padding="10dp"
+            android:textColorHint="#888" />
+
+        <!-- Logout Image -->
+        <ImageView
+            android:id="@+id/logout_image"
+            android:layout_width="45dp"
+            android:layout_height="43dp"
+            android:contentDescription="Logout"
+            android:src="@drawable/baseline_login_24" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/header_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Current Orders"
+        android:textColor="#1F1E1E"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_gravity="center" />
+
+    <!-- No Orders Message -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/orders_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
+
+    <!-- Take Orders Now Button -->
+
+</LinearLayout>

@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".PlaceOrderActivity">
+
+    <!-- Main Content Container -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_marginBottom="64dp">
+
+        <!-- Header Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@android:color/white"
+            android:elevation="4dp"
+            android:paddingVertical="12dp"
+            android:paddingHorizontal="16dp">
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/btn_back"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Back"
+                android:src="@drawable/baseline_arrow_back_24"
+                android:tint="@color/navy_blue"
+                android:layout_marginEnd="8dp" />
+
+            <TextView
+                android:id="@+id/tv_header"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Place Your Order"
+                android:textColor="@color/navy_blue"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Scrollable Section -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fillViewport="true"
+            android:padding="12dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Order Details Section -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="12dp"
+                    android:background="@android:color/white"
+                    android:elevation="2dp"
+                    android:layout_marginBottom="12dp"
+                    android:paddingHorizontal="16dp">
+
+                    <TextView
+                        android:id="@+id/tv_total_items"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Total items: 3"
+                        android:textSize="14sp"
+                        android:textColor="@color/black"
+                        android:paddingBottom="4dp" />
+
+                    <TextView
+                        android:id="@+id/tv_commission"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Commission: ₹85"
+                        android:textSize="14sp"
+                        android:textColor="@color/black"
+                        android:paddingBottom="4dp" />
+
+                    <TextView
+                        android:id="@+id/tv_order_total"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Order Total: ₹50"
+                        android:textSize="14sp"
+                        android:textColor="@color/black"
+                        android:paddingBottom="4dp" />
+
+                    <TextView
+                        android:id="@+id/tv_total"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Total Amount: ₹55"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/navy_blue"
+                        android:paddingBottom="12dp" />
+                </LinearLayout>
+
+                <!-- Place Order Button -->
+                <Button
+                    android:id="@+id/btn_place_order"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Place Your Order"
+                    android:backgroundTint="@color/navy_blue"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:padding="10dp"
+                    android:layout_marginBottom="12dp" />
+
+                <!-- Address Section -->
+                <TextView
+                    android:id="@+id/tv_select_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Select Your Address:"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/navy_blue"
+                    android:paddingBottom="6dp" />
+
+                <!-- ScrollView with Loading Indicator -->
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="230dp"
+                    android:layout_marginBottom="12dp"
+                    android:background="@android:color/white"
+                    android:elevation="2dp">
+
+                    <!-- Loading Spinner -->
+                    <ProgressBar
+                        android:id="@+id/loading_spinner"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_gravity="center"
+                        android:visibility="gone" />
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:id="@+id/saved_addresses_container"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="12dp" />
+                    </ScrollView>
+                </FrameLayout>
+
+                <!-- Add New Address Button -->
+                <Button
+                    android:id="@+id/btn_add_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Add New Address"
+                    android:backgroundTint="@color/navy_blue"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:padding="10dp" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <!-- Footer Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@android:color/white"
+        android:elevation="8dp"
+        android:paddingHorizontal="12dp">
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/btn_home"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Home"
+            android:src="@drawable/home"
+            android:scaleType="centerInside"
+            android:tint="@color/navy_blue" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/btn_user_account"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="User Account"
+            android:src="@drawable/baseline_person_24"
+            android:scaleType="centerInside"
+            android:tint="@color/navy_blue" />
+    </LinearLayout>
+
+</FrameLayout>

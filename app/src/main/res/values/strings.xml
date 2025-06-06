@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Grab and Go</string>
+    <string name="default_web_client_id">1017930716573-8ep7l9srhgqslhrbsehhv97k0c3hp4it.apps.googleusercontent.com</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="generate_otp">Generate OTP</string>
+    <string name="enter_otp">Enter OTP</string>
+    <string name="verify_sign_in">Verify and Sign In</string>
+    <string name="sign_out">sign out</string>
+
+</resources>
